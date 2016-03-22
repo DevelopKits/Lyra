@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{77caf264-8a58-424a-abcd-daf6381dab24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime">
+      <UniqueIdentifier>{3b836516-34ac-4980-8503-5a4007f7f2d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core">
+      <UniqueIdentifier>{fb694845-60b1-48f1-8a15-21d6ade3d77b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Math">
+      <UniqueIdentifier>{30502fa0-306f-4681-90aa-071a1240bc0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Platform">
+      <UniqueIdentifier>{85ee8635-2f40-4c1e-9e98-5d3b9e2e7f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Platform\Linux">
+      <UniqueIdentifier>{fc43dfec-d7db-4287-b0f9-885efe18dd4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Platform\Window">
+      <UniqueIdentifier>{2c497191-1b67-42ef-869b-b6da07dd755b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Platform\Android">
+      <UniqueIdentifier>{b48f12e7-7b1d-4688-983a-2ec365bc254a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Runtime\Core\Platform\HTML5">
+      <UniqueIdentifier>{81670063-add9-40c5-bb24-534c110f3f5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector.h">
+      <Filter>Source\Runtime\Core\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
