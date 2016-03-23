@@ -33,5 +33,8 @@
     <ClInclude Include="Vector.h">
       <Filter>Source\Runtime\Core\Math</Filter>
     </ClInclude>
+    <ClInclude Include="WindowsPlatform.h">
+      <Filter>Source\Runtime\Core\Platform\Window</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
