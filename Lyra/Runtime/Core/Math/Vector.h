@@ -102,7 +102,9 @@ public:
 /*LVector inline functions
 **************************************************************************/
 
+
 LVector operator*( float Scale, const LVector& V)
 {
 	return V.operator*( Scale );
 }
+
