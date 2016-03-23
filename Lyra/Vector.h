@@ -71,6 +71,7 @@ public:
 	bool IsNormalized() const;
 	void ToDirectionAndLength( LVector &OutDir, LVector &Length ) const;
 	LVector GetSignVector() const;
+	LVector Projection() const;
 	static LVector CrossProduct( const LVector& A, const LVector& B );
 	static LVector DotProduct( const LVector& A, const LVector& B );
 };
