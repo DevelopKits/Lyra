@@ -72,6 +72,37 @@ public:
 	void ToDirectionAndLength( LVector &OutDir, LVector &Length ) const;
 	LVector GetSignVector() const;
 	LVector Projection() const;
+	LVector GetUnsafeNormal() const;
+	LVector GridSnap( const float& GridSz ) const;
+	LVector BoundToCube( float Radius ) const;
+	LVector GetClampedToSize( float Min, float Max ) const;
+	LVector GetClampedToMaxSize( float MaxSize ) const;
+	LVector GetClampedToMaxSize2D( float MaxSize ) const;
+	void AddBounded( const LVector& V, float Radius );
+	LVector Reciprocal() const;
+	bool IsUniform( float Tolerance ) const;
+	LVector MirrorByVector( const LVector& MirrorNormal ) const;
+	LVector RotateAngleAxis( const float AngleDeg, const LVector& Axis ) const;
+	LVector GetSafeNormal( float Tolerance ) const;
+	LVector GetSafeNormal2D( float Tolerance ) const;
+	float CosineAngle2D( LVector B ) const;
+	LVector ProjectOnTo( LVector& A ) const;
+	LVector ProjectOnToNormal( LVector& Normal ) const;
+	bool ContainsNaN() const;
+
 	static LVector CrossProduct( const LVector& A, const LVector& B );
 	static LVector DotProduct( const LVector& A, const LVector& B );
+	static bool PointsAreSame( const LVector &P, const LVector &Q );
+	static bool PointsAreNear( const LVector &Point1, const LVector &Point2, float Dist );
+	static float Dist( const LVector &V1, const LVector &V2 );
+	static float DistSquared( const LVector &V1, const LVector &V2 );
+	static float DistSquaredXY( const LVector &V1, const LVector &V2 );
 };
+
+/*LVector inline functions
+**************************************************************************/
+
+LVector operator*( float Scale, const LVector& V)
+{
+	return V.operator*( Scale );
+}

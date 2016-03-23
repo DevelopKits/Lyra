@@ -147,8 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h" />
-    <ClInclude Include="WindowsPlatform.h" />
+    <ClCompile Include="Test\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Runtime\Core\Math\Vector.h" />
+    <ClInclude Include="Runtime\Core\Platform\Platform.h" />
+    <ClInclude Include="Runtime\Core\Platform\Window\WindowsPlatform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

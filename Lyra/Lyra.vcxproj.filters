@@ -28,13 +28,27 @@
     <Filter Include="Source\Runtime\Core\Platform\HTML5">
       <UniqueIdentifier>{81670063-add9-40c5-bb24-534c110f3f5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Runtime\Core\Containers">
+      <UniqueIdentifier>{15e32bc4-bc9f-4ccf-8a90-a5114ada36a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Test">
+      <UniqueIdentifier>{ea86f5b0-7122-4fd8-a81d-68c5f542ca69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector.h">
-      <Filter>Source\Runtime\Core\Math</Filter>
+    <ClCompile Include="Test\main.cpp">
+      <Filter>Source\Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Runtime\Core\Platform\Platform.h">
+      <Filter>Source\Runtime\Core\Platform</Filter>
     </ClInclude>
-    <ClInclude Include="WindowsPlatform.h">
+    <ClInclude Include="Runtime\Core\Platform\Window\WindowsPlatform.h">
       <Filter>Source\Runtime\Core\Platform\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Core\Math\Vector.h">
+      <Filter>Source\Runtime\Core\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
