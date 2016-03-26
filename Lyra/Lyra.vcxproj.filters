@@ -50,8 +50,8 @@
     <ClInclude Include="Runtime\Core\Math\Vector.h">
       <Filter>Source\Runtime\Core\Math</Filter>
     </ClInclude>
-    <ClInclude Include="Platform.h">
-      <Filter>Source\Runtime\Core\Platform</Filter>
+    <ClInclude Include="Runtime\Core\Math\MathUtility.h">
+      <Filter>Source\Runtime\Core\Math</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

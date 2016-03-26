@@ -108,3 +108,7 @@ LVector operator*( float Scale, const LVector& V)
 	return V.operator*( Scale );
 }
 
+float ComputeSquareDistanceFromBoxToPoint( const LVector& Mins, const LVector& Maxs, const LVector& Point )
+{
+
+}
