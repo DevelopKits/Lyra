@@ -71,6 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\MirageProgram\VS5\Lyra\Lyra;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -146,8 +147,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Platform.h" />
-    <ClInclude Include="Vector.h" />
+    <ClCompile Include="Test\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Runtime\Core\Math\Vector.h" />
+    <ClInclude Include="Runtime\Core\Platform\Platform.h" />
+    <ClInclude Include="Runtime\Core\Platform\Window\WindowsPlatform.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
