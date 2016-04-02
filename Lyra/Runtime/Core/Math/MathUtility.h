@@ -18,7 +18,6 @@
 #define HALF_PI (1.57079632679f)
 #define DELTA	(0.00001f)
 
-
 struct LMath
 {
 	static int RandHelper(int A)

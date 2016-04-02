@@ -8,3 +8,8 @@
 #define STDCALL			__stdcall
 #define FORCEINLINE		__forceinline
 #define FORCENOINLINE	__declspec(noinline)
+
+struct LWindiwsPlatformTypes : public LGenericPlatformTypes
+{
+
+};

@@ -150,6 +150,8 @@
     <ClCompile Include="Test\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Runtime\Core\GenericPlatform.h" />
+    <ClInclude Include="Runtime\Core\HAL\Platform.h" />
     <ClInclude Include="Runtime\Core\Math\MathUtility.h" />
     <ClInclude Include="Runtime\Core\Math\Vector.h" />
     <ClInclude Include="Runtime\Core\Platform\Platform.h" />
